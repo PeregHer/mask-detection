@@ -10,7 +10,7 @@ alarm = sa.WaveObject.from_wave_file('resources/alarm.wav')
 
 def process_frame(frame):
     # Detect faces with haarcascade
-    faces = haarcascade.detectMultiScale(frame, scaleFactor=1.1, minNeighbors=4)
+    faces = haarcascade.detectMultiScale(frame, scaleFactor=1.1, minNeighbors=7)
     # If a face is detected predict if the person wear a mask and return the frame
     if len(faces) != 0:
         for (x, y, w, h) in faces:
