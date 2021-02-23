@@ -13,7 +13,7 @@ An alarm song is played if the person is not wearing a mask and a happy emoji is
 The Convolutional Neural Network was made with Tensorflow and trained with 658 images of each classes.
 We obtained 96% of accuracy on the image test set. 
 
-## Mask detection
+## Face detection
 
 Face detection is done with haarcascade frontalface pre-trained model. We then use our classifier to predict the class on the detected zone.
 
